@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhamento Pessoal</title>
+    <link rel="stylesheet" href="css/pagina-1.css" type="text/css">
+</head>
+<body>
+    <form id="formulario" onsubmit="adicionarColaborador()">
+        <ul id="progresso">
+            <li class="etapas" id="etapa-1">Dados Pessoais</li>
+            <li class="etapas" id="etapa-2">Dados Pessoais</li>
+            <li class="etapas" id="etapa-3">Endereço</li>
+            <li class="etapas" id="etapa-4">Contato</li>
+            <li class="etapas" id="etapa-5">Dados Profissionais</li>
+        </ul>
+
+        <fieldset id="1" class="ativo" >
+            <h2>Dados pessoais</h2>
+            <input class="dados-1" type="text" id="nome" placeholder="Nome Completo">
+            <input class="dados-1" type="date" id="dataNasc" placeholder="Data de Nascimento">
+            <input class="dados-1" type="text" id="idade" placeholder="Idade">
+            <input class="dados-1" type="text" id="nomeDaMae" placeholder="Nome da Mãe">
+            <button class="proximo" id="proximo-1" onclick="next()">Próximo</button>
+        </fieldset>
+        <fieldset id="2" class="painel" style="visibility: hidden;">
+            <h2>Dados pessoais</h2>
+            <input class="dados-2" type="text" id="rg" placeholder="RG">
+            <input class="dados-2" type="text" id="orgaoEmissor" placeholder="Órgão Emissor">
+            <input class="dados-2" type="text" id="cpf" placeholder="CPF">
+            <input class="dados-2" type="text" id="nacionalidade" placeholder="Nacionalidade">
+            <button class="anterior" id="anterior-2" onclick="back()">Anterior</button>
+            <button class="proximo" id="proximo-2"  onclick="next()">Próximo</button>
+        </fieldset>
+        <fieldset id="3" class="painel" style="visibility: hidden;">
+            <h2>Endereço</h2>
+            <input type="text" id="endereco" placeholder="Endereço">
+            <input type="text" id="bairro" placeholder="Bairro">
+            <input type="text" id="cidade" placeholder="Cidade">
+            <input type="text" id="cep" placeholder="CEP">
+            <input type="text" id="uf" placeholder="UF">
+            <button class="anterior" id="anterior-3" onclick="back()">Anterior</button>
+            <button class="proximo" id="proximo-3"  onclick="next()">Próximo</button>
+            </fieldset>
+        <fieldset id="4" class="painel" style="visibility: hidden;">
+            <h2>Contato</h2>
+            <input type="text" id="celular" placeholder="Celular/WhatsApp">
+            <input type="text" id="contatoEmerg" placeholder="Contato de Emergência">
+            <input type="text" id="email" placeholder="E-mail">
+            <button class="anterior" id="anterior-4" onclick="back()">Anterior</button>
+            <button class="proximo" id="proximo-4" onclick="next()">Próximo</button>
+        </fieldset>
+        <fieldset id="5" class="painel" style="visibility: hidden;">
+            <h2>Dados Profissionais</h2>
+            <h3>Função:</h3>
+            <input type="text" id="funcao" placeholder="Função">
+            <input type="text" id="formacao" placeholder="Formação">
+            <input type="text" id="numero" placeholder="Número">
+            <h3>Especialidade:</h3>
+            <input type="text" id="principal" placeholder="Principal">
+            <input type="text" id="outra" placeholder="Outras">
+            <h3>Empresas:</h3>
+            <input type="text" id="empresa" placeholder="Empresas">
+            <button class="anterior" id="anterior-5" onclick="back()">Anterior</button>
+            <button type="submit" class="enviar" id="btnEnviar" onclick="window.location='index.html';">
+                Enviar</button>
+        </fieldset>
+    </form>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

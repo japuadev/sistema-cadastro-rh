@@ -1,0 +1,120 @@
+*{margin: 0; padding: 0;}
+
+body, html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url('../image/image-projeto.jpg');
+    background-size: cover;
+}
+
+
+.nav_tabs{
+    height: 520px;
+    width: 1265px;  
+    margin: 25px auto;
+    background-color: #fff;
+    border: 0;
+    margin-left: 3%;
+    margin-right: 3%;
+    position: relative;
+}
+
+.nav_tabs ul{
+    list-style: none;
+}
+
+.nav_tabs ul li{
+    float:left;
+}
+
+label{
+    width: 400px;
+    height: 30px;
+    padding: 10.82px;
+    display: block;
+    background-color: rgb(235, 235, 235);
+    text-transform: uppercase;
+	color: rgb(145, 145, 145);
+    cursor:pointer;
+    text-align: center; 
+}
+
+.nav_tabs div{
+    width: 400px;
+    padding: 5px;
+    display: none;
+    font-size: 13px;
+    color: rgb(59, 59, 59);
+    margin: 10px; 
+    margin-left: 6.8%;
+}
+
+.rd_tabs:checked ~label{
+    background-color: #19bb60;
+    color: #fff;
+}
+
+.rd_tabs{
+    display:none;
+}
+
+.rd_tabs:checked ~.tabelas{
+    display: block;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: "bold";
+    color: rgb(59, 59, 59);
+    margin-bottom: 2.7%;
+    margin-top: 1%;  
+    margin-left: 4%; 
+}
+
+h3{
+    font-size: 26px;
+    color: #fff;
+    margin-top: 2%; 
+    margin-left: 3%;
+    display: block;
+}
+
+h4{
+    font-size: 15px;
+    color: rgb(59, 59, 59);
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 4%; 
+}
+
+p{
+    font-size: 13px;
+    color: rgb(59, 59, 59);
+    margin: 8px; 
+    margin-left: 13%;
+}
+
+#btn-voltar{
+    text-align: center;
+    width: 8%;
+    padding: 10px;
+    background: #19bb60;
+    color: #fff;
+    font: 14px 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 20px;
+    border: 0 none;
+    cursor: pointer;
+    position: absolute;
+    top: 90%;
+    left: 85%;
+}
+
+#btn-voltar:hover{background: #a5f24b;}
+
+i{
+    color: #19bb60; 
+    margin-right: 20px;
+}
+
+.nav_tabs #icone{
+    transform: scale(1.5);
+}

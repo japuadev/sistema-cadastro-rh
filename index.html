@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <title>Gestão de Pessoas</title>
+</head>
+<body id="pag-top" data-spy="scroll" data-target=".navbar-fixa-top">
+    <nav id="menu" class="navbar-default">
+        <div class="container-1">
+            <div class="navbar-collapse" id="navbar-collapse-1" aria-expanded="false">
+                <ul class="navbarlista">
+                    <li>
+                        <a href="login.html" class="pagscroll">Sair</a>
+                    </li>
+                    <li>
+                        <a href="#cadastrar" class="pagscroll">Cadastrar</a>
+                    </li>
+                    <li>
+                        <a href="#pesquisar" class="pagscroll">Pesquisar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="cadastrar">
+        <div class="container">
+            <div class="titulo-cadastro">
+                <h2>GESTÃO DE PESSOAS</h2>
+                <div class="texto-cadastro">
+                    <p class="texto-pag">Nosso objetivo é otimizar o tempo para no cadastro 
+                        e gestão de colaboradores para trazer as facilidades da tecnologia 
+                        para sua empresa de forma prática, rápida e inteligente. 
+                    </p>
+                    <button id="btn-cadastro" type="submit" class="btn-pag" 
+                    onclick="window.location='pagina-1.html';">
+                        Cadastro</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pesquisar">
+        <div class="container">
+            <div class="titulo-pesquisa">
+                <h2>PESQUISAR</h2>
+                <div class="texto-pesquisa">
+                    <p class="texto-pag">Espaço de pesquisa para achar os dados dos
+                        seus colaboradores no nosso sistema. 
+                    </p>
+                     <input type="text" id="pesquisaInput"name="pesquisa" 
+                     placeholder="Digite o nome da pessoa">   
+                    <button id="btn-pesquisa" class="btn-pag" 
+                    onclick="window.location='pagina-2.html';">Pesquisar</button>
+                    <ul id="sugestao"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+      <script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
