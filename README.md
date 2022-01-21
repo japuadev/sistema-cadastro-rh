@@ -20,5 +20,5 @@ Sistema para cadastro e pesquisa de colaboradores de empresas.
 <p>[x] Login</p>
 <p>[x] Principal</p>
 <p>[x] Cadastro</p>
-<p>[ ] Pesquisa</p> 
+<p>[x] Pesquisa</p> 
 
